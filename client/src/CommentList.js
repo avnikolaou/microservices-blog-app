@@ -8,7 +8,7 @@ export default ({ postId }) => {
         const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`);
 
         setComments(res.data);
-    }
+    };
 
     useEffect(() => {
         fetchData();
